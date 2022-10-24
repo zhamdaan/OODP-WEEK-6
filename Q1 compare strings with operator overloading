@@ -1,0 +1,25 @@
+//compare two strings using binary operator overloading
+ #include <iostream>  
+ #include <string>
+using namespace std ;  
+ 
+ class cmp  
+ {   string A  ;   
+     public :  
+       cmp   () 
+       { cout<<"enter string  ";  
+         cin >>A  ;  
+       }  
+ int operator==( cmp B  )
+       {  if ( A.compare (B.A)==0  )
+          { cout<<"strings are same   "  ;   }  
+            else  
+              { cout <<" strings are not same " ;  }  
+    return 0  ;    }  
+ }  ;  
+   
+   int main   ( )   
+      { cmp A , Z  ;
+       A == Z   ;  
+       return 0  ;  
+      } 
