@@ -1,0 +1,23 @@
+#include<iostream>
+#include<string>
+using namespace std  ;  
+   class swapp { int x ; 
+    public : 
+     swapp () 
+      { cout<< " enter number " ; 
+          cin>>x ; 
+      } 
+      int operator=(swapp B)
+        {  cout<< " old"<< endl << x <<endl <<B.x<<endl<<endl ; 
+            int temp   ;
+            temp  =x  ;  
+            x = B.x ;  
+             B.x = temp ; 
+             cout << " new " <<endl <<x<<endl<<B.x ;  } 
+   }; 
+   
+int main ()  
+   { swapp A , B  ; 
+     A=B ; 
+     return 0  ; 
+   } 
