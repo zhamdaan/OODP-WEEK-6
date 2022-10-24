@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std ; 
+class comop 
+{  int x ,  y  ;   
+    
+     public : 
+       comop  () 
+        {  cout <<"enter the real part  of the complex number " ;  
+            cin>>x ;  
+            cout<<endl<<"enter the imaginary part of the complex number" ;  
+             cin>>y ;   
+        } 
+        
+        int operator+(comop B )
+          {  x=x+B.x ;  
+              y = y + B.y ;  
+           
+           cout<<"the sum is  " <<x<<" + "<<y<<"i"<<endl  ;  
+          return 0  ; } 
+          int operator-(comop B )
+             {  x=x-B.x ;  
+                y=y-B.y ;  
+            cout<<"the difference is  "<<x<<" + "<<y<<"i"<<endl  ; 
+             }  
+}  ;
+ int main  ()
+   { comop A , B ; 
+     A+B ; 
+     A-B ;
+     return 0  ; 
+   } 
